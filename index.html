@@ -14,11 +14,11 @@
     <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 </head>
 <body>
-    <div class="jumbotron jumbotron-fluid my-conteirner">
+    <div class="jumbotron jumbotron-fluid my-conteiner">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-12">
-                    <div align="center">
+                <div class="col-12 col-md-12" >
+                    <div class="my-figure" align="center">
                         <img 
                         class="rounded-circle z-depth-2" 
                         alt="100x100" 
@@ -171,6 +171,7 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <!-- Scripts -->
+    <script src="js/script.js" type="text/javascript"></script>
     <script type="text/javascript">
         /**
         * Loading styles.
@@ -178,7 +179,16 @@
         const link = document.createElement("link");
         link.rel = "stylesheet";
         link.href = "css/styles.css?t=".concat( new Date().getTime() );
-        $('head').append(link);
+        $("head").append(link);
+
+
+        if (isMobileDevice()) {
+            var styles = "padding:5% 8% 5% 8%;";
+        } else {
+            var styles = "padding:5% 25% 5% 25%;";
+        }
+        
+        $("body").attr("style", styles);
     </script>
 </body>
 </html>
