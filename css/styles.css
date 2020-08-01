@@ -12,8 +12,9 @@ ul {
     text-transform: none;
 }
 
-h6 {
+h1, h6 {
     margin-top: 5px;
+    color: #2f2f2f;
 }
 
 .my-conteiner {
@@ -31,10 +32,10 @@ h6 {
 }
 .my-about {
     font-size: 16px;
+    margin-left: 12px;
 }
 .my-contacts {
-    margin-left: 15px;
-    font-size: 36px;
+    font-size: 26px;
 }
 .my-skills i:hover {
     color: #007bff;

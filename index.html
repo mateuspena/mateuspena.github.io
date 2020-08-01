@@ -12,6 +12,8 @@
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <!-- Scripts -->
+    <script src="js/script.js" type="text/javascript"></script>
 </head>
 <body>
     <div class="jumbotron jumbotron-fluid my-conteiner">
@@ -27,7 +29,7 @@
                     </div>
 
                     <div class="my-section" align="center">
-                        <h1>Mateus Pena</h1>
+                        <h1 id="nome">Mateus Pena</h1>
                         <p style="font-size: 16px">Web Developer</p>
                         <hr>
                     </div>
@@ -36,64 +38,35 @@
                         <h6>About</h6>
                         <ul class="fa-ul mb-0 my-about">
                             <li>
-                                <i class="fas fa-address-card"></i> 
-                                Brasileiro, Solteiro, 24 anos.
+                                <span style="padding-right: 7px">
+                                    <i class="fas fa-address-card"></i>
+                                </span>
+                                <script type="text/javascript">
+                                    document.write("Brasileiro, Solteiro, " + getIdade() + " anos.");
+                                </script>
                             </li>
                             <li>
-                                <i class="fas fa-map-marker-alt"></i> 
+                                <span style="padding-right: 12px">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </span>
                                 Castelo Branco, Salvador - BA.
                             </li>
                             <li>
-                                <i class="fas fa-phone"></i> (71) 9 8141-8315
+                                <span style="padding-right: 7px">
+                                    <i class="fas fa-envelope"></i>
+                                </span>
+                                <i style="font-weight: 500">mateus.pena</i><i>@outlook.com.br</i>
                             </li>                            
                         </ul>
                     </div>
 
                     <div class="my-section">
-                        <h6>Contacts</h6>
-                        <ul class="list-inline list-icons my-contacts">
-                            <li class="list-inline-item" title="Email: mateus.18j@gmail.com">
-                                <a href="mailto:mateus.18j@gmail.com" target="_blank">
-                                    <i class="fas fa-envelope"></i>
-                                </a>
-                            </li>
-                            <li class="list-inline-item" title="Linkedin: linkedin.com/in/mateuspena">
-                                <a href="https://linkedin.com/in/mateuspena" target="_blank">
-                                    <i class="fab fa-linkedin"></i>
-                                </a>
-                            </li>
-                            
-                        </ul>
-                    </div>
-
-                    <div class="my-section">
-                        <h6>Education</h6>
-                        <ul class="fa-ul mb-0">
-                            <li>
-                                <i class="fa-li fa fa-check"></i> 
-                                <b>Bacharelado em Sistemas de Informação:</b> 
-                                Universidade do Estado da Bahia (07/2016 - CURRENT)
-                            </li>
-                            <li>
-                                <i class="fa-li fa fa-check"></i> 
-                                <b>Tecnologia em Sistemas de Informação:</b> 
-                                Universidade Salvador (02/2016 - 06/2018)
-                            </li>
-                            <li>
-                                <i class="fa-li fa fa-check"></i> 
-                                <b>Técnico em Telecomunicações:</b> 
-                                Serviço Nacional de Aprendizagem Industrial (04/2014 - 01/2016)
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="my-section">
-                        <h6>Experiencies</h6>
+                        <h6>Work Experiencies</h6>
                         <ul class="fa-ul mb-0">
                             <li>
                                 <i class="fa-li fa fa-check"></i> 
                                 <b>Foco Multimídia:</b> 
-                                Estágio em Desenvolvimento Web (10/2019 - 03/2020)
+                                Estágio em Desenvolvimento Web (10/2019 - HOJE)
                             </li>
                             <li>
                                 <i class="fa-li fa fa-check"></i> 
@@ -102,9 +75,91 @@
                             </li>
                         </ul>
                     </div>
-                    
+
                     <div class="my-section">
-                        <h6>Skills</h6>
+                        <h6>Education</h6>
+                        <ul class="fa-ul mb-0">
+                            <li>
+                                <i class="fa-li fa fa-check"></i>
+                                <b>Bacharelado em Sistemas de Informação:</b>
+                                Universidade do Estado da Bahia (07/2016 - HOJE)
+                            </li>
+                            <li>
+                                <i class="fa-li fa fa-check"></i>
+                                <b>Tecnologia em Sistemas de Informação:</b>
+                                Universidade Salvador (02/2016 - 06/2018)
+                            </li>
+                            <li>
+                                <i class="fa-li fa fa-check"></i>
+                                <b>Técnico em Telecomunicações:</b>
+                                Serviço Nacional de Aprendizagem Industrial (04/2014 - 01/2016)
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="my-section">
+                        <h6>Courses, Workshops and Events</h6>
+                        <ul class="fa-ul mb-0">
+                            <li>
+                                <i class="fa-li fa fa-check"></i>
+                                <a href="curso-7.pdf"><b>Laravel Construindo APIs REST:</b></a>
+                                Udemy (05/2020)
+                            </li>
+                            <li>
+                                <i class="fa-li fa fa-check"></i>
+                                <a href="curso-6.pdf"><b>Introdução ao Laravel 5.3:</b></a>
+                                Udemy (02/2019)
+                            </li>
+                            <li>
+                                <i class="fa-li fa fa-check"></i>
+                                <a href="curso-5.pdf"><b>Servidor Proxy com Squid no Linux:</b></a>
+                                Udemy (07/2018)
+                            </li>
+                            <li>
+                                <i class="fa-li fa fa-check"></i>
+                                <a href="curso-4.pdf"><b>Python Básico:</b></a>
+                                TreinaWeb (01/2018)
+                            </li>
+                            <li>
+                                <i class="fa-li fa fa-check"></i>
+                                <a href="curso-3.pdf"><b>Ética e Relacionamento no Trabalho:</b></a>
+                                SEST SENAT (01/2018)
+                            </li>
+                            <li>
+                                <i class="fa-li fa fa-check"></i>
+                                <a href="curso-2.pdf"><b>JavaFX Voyage:</b></a>
+                                IEEE USB (08/2017)
+                            </li>
+                            <li>
+                                <i class="fa-li fa fa-check"></i>
+                                <a href="curso-1.pdf"><b>Formação em Sistemas Linux:</b></a>
+                                eSecurity (02/2017)
+                            </li>
+                            <li>
+                                <i class="fa-li fa fa-check"></i>
+                                <a href="evento-2.pdf"><b>Evento - Segurança da Informação e Defesa de Rede:</b></a>
+                                I Congresso TI Unifacs (11/2016)
+                            </li>
+                            <li>
+                                <i class="fa-li fa fa-check"></i>
+                                <a href="evento-1.pdf"><b>Evento - Inovações Tecnológicas e Desafios dos Profissionais de TI:</b></a>
+                                I Congresso TI Unifacs (11/2016)
+                            </li>
+                            <li>
+                                <i class="fa-li fa fa-check"></i>
+                                <a href="workshop-1.pdf"><b>Workshop - Construção de Antenas:</b></a>
+                                Mundo SENAI (09/2015)
+                            </li>
+                            <li>
+                                <i class="fa-li fa fa-check"></i>
+                                <a href="workshop-1.pdf"><b>Workshop - Instalação de Linha Telefônica e Internet:</b></a>
+                                Mundo SENAI (09/2015)
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="my-section">
+                        <h6>Technical Skills and Interests</h6>
                         <ul class="list-inline list-icons my-skills">
                             <li class="list-inline-item" title="Docker">
                                 <i class="devicons devicons-docker"></i>
@@ -159,6 +214,27 @@
                             </li>
                         </ul>
                     </div>
+
+                    <div class="my-section" align="center">
+                        <hr>
+                        <ul class="list-inline list-icons my-contacts">
+                            <li class="list-inline-item" title="Email: mateus.pena@outlook.com.br">
+                                <a href="mailto:mateus.pena@outlook.com.br" target="_blank">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item" title="Linkedin: linkedin.com/in/mateuspena">
+                                <a href="https://linkedin.com/in/mateuspena" target="_blank">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item" title="Telegram: @mateuspena">
+                                <a href="https://t.me/mateuspena" target="_blank">
+                                    <i class="fab fa-telegram"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -170,8 +246,6 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <!-- Scripts -->
-    <script src="js/script.js" type="text/javascript"></script>
     <script type="text/javascript">
         /**
         * Loading styles.
@@ -183,12 +257,12 @@
 
 
         if (isMobileDevice()) {
-            var styles = "padding:5% 8% 5% 8%;";
+            $("body").attr("style", "padding:5% 8% 5% 8%;");
+            $("#nome").attr("style", "font-size:32px;");
         } else {
-            var styles = "padding:5% 25% 5% 25%;";
+            $("body").attr("style", "padding:5% 25% 5% 25%;");
         }
-        
-        $("body").attr("style", styles);
+
     </script>
 </body>
 </html>
