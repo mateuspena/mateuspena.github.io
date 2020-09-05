@@ -26,6 +26,13 @@ h1, h6 {
 .my-section {
     margin-top:25px;
 }
+.my-printer {
+    margin-bottom:-50px;
+    margin-top:5px;
+}
+.my-printer a {
+    color: #444444;
+}
 .my-skills {
     text-align: center;
     font-size: 56px;
