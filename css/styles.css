@@ -47,3 +47,6 @@ h1, h6 {
 .my-skills i:hover {
     color: #007bff;
 }
+.clickable:hover {
+    cursor: pointer;
+}

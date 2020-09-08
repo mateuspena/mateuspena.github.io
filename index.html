@@ -6,12 +6,17 @@
     <title>Mateus Pena</title>
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
+        crossorigin="anonymous">
     <!-- Devicons -->
-    <link href='//cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>
-
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href='//cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css' 
+        rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" 
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" 
+        rel="stylesheet">
     <!-- Scripts -->
     <script src="js/script.js" type="text/javascript"></script>
 </head>
@@ -20,10 +25,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-12" >
-                    <div class="my-printer" align="right" hidden>
+                    <div class="my-printer" align="right">
                         <ul class="list-inline list-icons my-contacts">
                             <li class="list-inline-item" title="Imprimir">
-                                <i class="fas fa-print"></i>
+                                <i id="btnImprimir" class="fas fa-print clickable"></i>
                             </li>
                         </ul>
                     </div>
@@ -250,29 +255,38 @@
         </div>
     </div>
 
-    <script src="https://kit.fontawesome.com/e4c39da138.js" crossorigin="anonymous"></script>
-
+    <script src="https://kit.fontawesome.com/e4c39da138.js" 
+        crossorigin="anonymous"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" 
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" 
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" 
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" 
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" 
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" 
+        crossorigin="anonymous"></script>
     <script type="text/javascript">
-        /**
-        * Loading styles.
-        */
-        const link = document.createElement("link");
-        link.rel = "stylesheet";
-        link.href = "css/styles.css?t=".concat( new Date().getTime() );
-        $("head").append(link);
+        document.getElementById("btnImprimir").onclick = function () {
+            const tela = window;
+            tela.print();
+        };
+
+        window.onload = function () {
+            const link = document.createElement("link");
+            link.rel = "stylesheet";
+            link.href = "css/styles.css?t=".concat( new Date().getTime() );
+            $("head").append(link);
 
 
-        if (isMobileDevice()) {
-            $("body").attr("style", "padding:5% 8% 5% 8%;");
-            $("#nome").attr("style", "font-size:32px;");
-        } else {
-            $("body").attr("style", "padding:5% 25% 5% 25%;");
-        }
-
+            if (isMobileDevice()) {
+                $("body").attr("style", "padding:5% 8% 5% 8%;");
+                $("#nome").attr("style", "font-size:32px;");
+            } else {
+                $("body").attr("style", "padding:5% 25% 5% 25%;");
+            }
+        };
     </script>
 </body>
 </html>
