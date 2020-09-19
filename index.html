@@ -5,18 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mateus Pena</title>
 
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/favicon.png">
     <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+    <link href="//stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         rel="stylesheet" 
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
         crossorigin="anonymous">
     <!-- Devicons -->
-    <link href='//cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css' 
-        rel='stylesheet'>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" 
+    <link href="//cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css"
+          rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i"
         rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" 
+    <link href="//fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900"
         rel="stylesheet">
+    <!-- Stylesheets -->
+    <link href="css/styles.css" rel="stylesheet">
     <!-- Scripts -->
     <script src="js/script.js" type="text/javascript"></script>
 </head>
@@ -25,8 +29,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-12" >
-                    <div class="my-printer" align="right">
-                        <ul class="list-inline list-icons my-contacts">
+                    <div class="my-printer" id="imprimir" align="right">
+                        <ul class="list-inline list-icons">
                             <li class="list-inline-item" title="Imprimir">
                                 <i id="btnImprimir" class="fas fa-print clickable"></i>
                             </li>
@@ -37,7 +41,8 @@
                         <img 
                         class="rounded-circle z-depth-2" 
                         alt="100x100" 
-                        src="img/20190401_073434.jpg"
+                        src="img/perfil.jpg"
+                        style="border: 5px solid #cdcdcd"
                         data-holder-rendered="true">
                     </div>
 
@@ -51,19 +56,19 @@
                         <h6>About</h6>
                         <ul class="fa-ul mb-0 my-about">
                             <li>
-                                <span style="padding-right: 7px">
+                                <span style="padding-right: 7px; font-size: 16px;">
                                     <i class="fas fa-address-card"></i>
                                 </span>
                                 Brasileiro, Solteiro, 25 anos.
                             </li>
                             <li>
-                                <span style="padding-right: 12px">
+                                <span style="padding-left: 2px; padding-right: 10px; font-size: 16px;">
                                     <i class="fas fa-map-marker-alt"></i>
                                 </span>
                                 Castelo Branco, Salvador, Bahia ‒ BRASIL.
                             </li>
                             <li>
-                                <span style="padding-right: 7px">
+                                <span style="padding-right: 7px; font-size: 16px;">
                                     <i class="fas fa-envelope"></i>
                                 </span>
                                 <i style="font-weight: 500">mateus.pena</i><i>@outlook.com.br</i>
@@ -97,7 +102,7 @@
                             </li>
                             <li>
                                 <i class="fa-li fa fa-check"></i>
-                                <b>Tecnologia em Sistemas de Informação:</b>
+                                <b>Tecnologia em Redes de Computadores:</b>
                                 Universidade Salvador (02/2016 - 06/2018)
                             </li>
                             <li>
@@ -113,42 +118,42 @@
                         <ul class="fa-ul mb-0">
                             <li>
                                 <i class="fa-li fa fa-check"></i>
-                                <a href="files/curso-8.pdf"><b>Scrum para Desenvolvedores de Software:</b></a>
+                                <a target="_blank" href="files/curso-8.pdf"><b>Scrum para Desenvolvedores de Software:</b></a>
                                 Udemy (08/2020)
                             </li>
                             <li>
                                 <i class="fa-li fa fa-check"></i>
-                                <a href="files/curso-7.pdf"><b>Laravel Construindo APIs REST:</b></a>
+                                <a target="_blank" href="files/curso-7.pdf"><b>Laravel Construindo APIs REST:</b></a>
                                 Udemy (05/2020)
                             </li>
                             <li>
                                 <i class="fa-li fa fa-check"></i>
-                                <a href="files/curso-6.pdf"><b>Introdução ao Laravel 5.3:</b></a>
+                                <a target="_blank" href="files/curso-6.pdf"><b>Introdução ao Laravel 5.3:</b></a>
                                 Udemy (02/2019)
                             </li>
                             <li>
                                 <i class="fa-li fa fa-check"></i>
-                                <a href="files/curso-5.pdf"><b>Servidor Proxy com Squid no Linux:</b></a>
+                                <a target="_blank" href="files/curso-5.pdf"><b>Servidor Proxy com Squid no Linux:</b></a>
                                 Udemy (07/2018)
                             </li>
                             <li>
                                 <i class="fa-li fa fa-check"></i>
-                                <a href="files/curso-4.pdf"><b>Python Básico:</b></a>
+                                <a target="_blank" href="files/curso-4.pdf"><b>Python Básico:</b></a>
                                 TreinaWeb (01/2018)
                             </li>
                             <li>
                                 <i class="fa-li fa fa-check"></i>
-                                <a href="files/curso-3.pdf"><b>Ética e Relacionamento no Trabalho:</b></a>
+                                <a target="_blank" href="files/curso-3.pdf"><b>Ética e Relacionamento no Trabalho:</b></a>
                                 SEST SENAT (01/2018)
                             </li>
                             <li>
                                 <i class="fa-li fa fa-check"></i>
-                                <a href="files/curso-2.pdf"><b>JavaFX Voyage:</b></a>
+                                <a target="_blank" href="files/curso-2.pdf"><b>JavaFX Voyage:</b></a>
                                 IEEE USB (08/2017)
                             </li>
                             <li>
                                 <i class="fa-li fa fa-check"></i>
-                                <a href="files/curso-1.pdf"><b>Formação em Sistemas Linux:</b></a>
+                                <a target="_blank" href="files/curso-1.pdf"><b>Formação em Sistemas Linux:</b></a>
                                 eSecurity (02/2017)
                             </li>
                         </ul>
@@ -160,12 +165,12 @@
                         <ul class="fa-ul mb-0">
                             <li>
                                 <i class="fa-li fa fa-check"></i>
-                                <a href="files/certificacao-2.pdf"><b>Scrum Foundation Professional Certificate:</b></a>
+                                <a target="_blank" href="files/certificacao-2.pdf"><b>Scrum Foundation Professional Certificate:</b></a>
                                 CertiProf Professional Knowledge (09/2020)
                             </li>
                             <li>
                                 <i class="fa-li fa fa-check"></i>
-                                <a href="files/certificacao-1.pdf"><b>Scrum Fundamentals Certified:</b></a>
+                                <a target="_blank" href="files/certificacao-1.pdf"><b>Scrum Fundamentals Certified:</b></a>
                                 SCRUMstudy (09/2020)
                             </li>
                         </ul>
@@ -175,55 +180,55 @@
                         <h6>Technical Skills and Interests</h6>
                         <ul class="list-inline list-icons my-skills">
                             <li class="list-inline-item" title="Docker">
-                                <i class="devicons devicons-docker"></i>
+                                <i class="devicon-docker-plain"></i>
                             </li>
-                            <li class="list-inline-item" title="Linux OS">
-                                <i class="devicons devicons-linux"></i>
+                            <li class="list-inline-item" title="Linux">
+                                <i class="devicon-linux-plain"></i>
+                            </li>
+                            <li class="list-inline-item" title="Postgresql">
+                                <i class="devicon-postgresql-plain"></i>
                             </li>
                             <li class="list-inline-item" title="MySQL">
-                                <i class="devicons devicons-mysql"></i>
+                                <i class="devicon-mysql-plain"></i>
                             </li>
                             <li class="list-inline-item" title="MongoDB">
-                                <i class="devicons devicons-mongodb"></i>
+                                <i class="devicon-mongodb-plain"></i>
                             </li>
                             <li class="list-inline-item" title="SQLite">
-                                <i class="devicons devicons-sqllite"></i>
+                                <i class="devicon-sqllite-plain"></i>
                             </li>
                             <li class="list-inline-item" title="Git">
-                                <i class="devicons devicons-git"></i>
+                                <i class="devicon-git-plain"></i>
                             </li>
                             <li class="list-inline-item" title="PHP">
-                                <i class="devicons devicons-php"></i>
+                                <i class="devicon-php-plain"></i>
                             </li>
                             <li class="list-inline-item" title="Laravel">
-                                <i class="devicons devicons-laravel"></i>
-                            </li>
-                            <li class="list-inline-item" title="Composer">
-                                <i class="devicons devicons-composer"></i>
-                            </li>
-                            <li class="list-inline-item" title="Java">
-                                <i class="devicons devicons-java"></i>
+                                <i class="devicon-laravel-plain"></i>
                             </li>
                             <li class="list-inline-item" title="CSS">
-                                <i class="devicons devicons-css3"></i>
+                                <i class="devicon-css3-plain"></i>
                             </li>
                             <li class="list-inline-item" title="HTML5">
-                                <i class="devicons devicons-html5"></i>
+                                <i class="devicon-html5-plain"></i>
                             </li>
                             <li class="list-inline-item" title="Bootstrap">
-                                <i class="devicons devicons-bootstrap"></i>
+                                <i class="devicon-bootstrap-plain"></i>
                             </li>
                             <li class="list-inline-item" title="JavaScript">
-                                <i class="devicons devicons-javascript"></i>
+                                <i class="devicon-javascript-plain"></i>
                             </li>
                             <li class="list-inline-item" title="JQuery">
-                                <i class="devicons devicons-jquery"></i>
+                                <i class="devicon-jquery-plain"></i>
                             </li>
                             <li class="list-inline-item" title="NodeJS">
-                                <i class="devicons devicons-nodejs"></i>
+                                <i class="devicon-nodejs-plain"></i>
                             </li>
                             <li class="list-inline-item" title="NPM">
-                                <i class="devicons devicons-npm"></i>
+                                <i class="devicon-npm-original-wordmark"></i>
+                            </li>
+                            <li class="list-inline-item" title="Yarn">
+                                <i class="devicon-yarn-plain"></i>
                             </li>
                         </ul>
                     </div>
@@ -253,31 +258,34 @@
         </div>
     </div>
 
-    <script src="https://kit.fontawesome.com/e4c39da138.js" 
+    <script src="//kit.fontawesome.com/e4c39da138.js"
         crossorigin="anonymous"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" 
+    <script src="//code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" 
         crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" 
+    <script src="//cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" 
         crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" 
+    <script src="//stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" 
         crossorigin="anonymous"></script>
     <script type="text/javascript">
         document.getElementById("btnImprimir").onclick = function () {
-            const tela = window;
-            tela.print();
+            const screenConfig = window.document.body.style.padding;
+
+            window.document.body.style.fontSize = "105%";
+            window.document.body.style.padding = "0px";
+            window.document.getElementById('imprimir').hidden = true;
+
+            window.print();
+
+            window.document.body.style.fontSize = null;
+            window.document.body.style.padding = screenConfig;
+            window.document.getElementById('imprimir').hidden = false;
         };
 
         window.onload = function () {
-            const link = document.createElement("link");
-            link.rel = "stylesheet";
-            link.href = "css/styles.css?t=".concat( new Date().getTime() );
-            $("head").append(link);
-
-
             if (isMobileDevice()) {
                 $("body").attr("style", "padding:5% 8% 5% 8%;");
                 $("#nome").attr("style", "font-size:32px;");
